@@ -14,10 +14,7 @@ pipeline {
         stage('Docker-Compose-Up') {
             steps {
                 echo 'Docker-Compose-Up'
-                sh "sudo apt-get update"
-                sh "sudo apt-get install docker-compose-plugin"
-                sh "docker-compose --version"
-                sh "docker-compose up --detach --build"
+                //sh "docker-compose up --detach --build"
             }
         }
     }
