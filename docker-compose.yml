@@ -1,0 +1,10 @@
+version: '3.0'
+
+services:
+  backend:
+    build:
+      context: ./
+    ports:
+      - '8081:8080'
+    expose:
+      - '8081'
