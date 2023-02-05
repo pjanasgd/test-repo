@@ -5,10 +5,10 @@ pipeline {
         stage('maven install'){
             steps{
                 echo 'mvn install'
-                withMaven(maven: 'maven3'){
-                    sh 'which mvn'
-                    sh 'mvn clean install'
-                }
+                //withMaven(maven: 'maven3'){
+                //    sh 'which mvn'
+                //    sh 'mvn clean install'
+                //}
             }
         }
         stage('Docker-Compose-Up') {
