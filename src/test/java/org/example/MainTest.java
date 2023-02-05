@@ -7,6 +7,6 @@ class MainTest {
 
     @Test
     void hello_shouldReturnHelloWorld() {
-        Assertions.assertEquals("hello", "hello");
+        Assertions.assertEquals("hello", "hell");
     }
 }
