@@ -14,7 +14,6 @@ pipeline {
         stage('Docker-Compose-Up') {
             steps {
                 echo 'Docker-Compose-Up'
-                sh "npm install -g docker-compose"
                 sh "docker-compose --version"
                 sh "docker-compose up --detach --build"
             }
