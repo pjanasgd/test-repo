@@ -17,12 +17,5 @@ pipeline {
                 //sh "docker-compose up --detach --build"
             }
         }
-        stage('Build docker image') {
-            steps {
-                script {
-                    sh 'docker build -t jenkins/app .'
-                }
-            }
-        }
     }
 }
